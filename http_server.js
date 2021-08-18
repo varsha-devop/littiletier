@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 // serve static files from public directory
 // -------------------------------------------
-app.use(express.static('public'));
+app.use(express.static('./'));
 
 // init the data store
 db.defaults({ users: [] }).write();
